@@ -1,0 +1,2 @@
+- Demo Spring Project having multiple controllers
+- Changing the default security configurations and loading the user credentials from application.properties file.

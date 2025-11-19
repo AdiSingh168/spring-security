@@ -1,0 +1,3 @@
+- Demo Spring Project having multiple controllers
+- Changing the default security configurations and loading the user credentials from and into the Application InMemory.
+- We are storing the credentials in the Config class itself.
