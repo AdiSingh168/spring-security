@@ -1,0 +1,38 @@
+###
+# @no-cookie-jar
+GET http://localhost:8080/myAccount
+Authorization: Basic {{happy.basic-auth}}
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/myBalance
+Authorization: Basic {{john.basic-auth}}
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/myCards
+Authorization: Basic {{john.basic-auth}}
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/contact
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/myLoans
+Authorization: Basic {{john.basic-auth}}
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/notices
+
+###
+# @no-cookie-jar
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "pwd": "EazyBytes@12345",
+  "role": "user"
+}
