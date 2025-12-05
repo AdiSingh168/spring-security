@@ -1,0 +1,4 @@
+- Demo Spring Project having multiple controllers
+- Changing the default security configurations and loading the user credentials from a PostgreSQL DB.
+- We are storing the credentials in a PostgreSQL DB.
+- Added a controller method so that Users can also be added in the DB.

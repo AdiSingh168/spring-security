@@ -1,0 +1,21 @@
+###
+GET http://localhost:8080/myAccount
+Authorization: Basic {{easybytes.basic-auth}}
+
+###
+GET http://localhost:8080/myBalance
+Authorization: Basic {{easybytes.basic-auth}}
+
+###
+GET http://localhost:8080/myCards
+Authorization: Basic {{easybytes.basic-auth}}
+
+###
+GET http://localhost:8080/contact
+
+###
+GET http://localhost:8080/myLoans
+Authorization: Basic {{easybytes.basic-auth}}
+
+###
+GET http://localhost:8080/notices
