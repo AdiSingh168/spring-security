@@ -5,3 +5,4 @@ Demo project for Spring Boot and Spring Security
 - [Section 3](https://github.com/AdiSingh168/spring-security/blob/main/section3/springsecsection3/README.md)
 - [Section 4](https://github.com/AdiSingh168/spring-security/blob/main/section4/springsecsection4/README.md)
 - [Section 6](https://github.com/AdiSingh168/spring-security/blob/main/section6/springsecsection6/README.md)
+- [Section 7](https://github.com/AdiSingh168/spring-security/blob/main/section7/springsecsection7/README.md)

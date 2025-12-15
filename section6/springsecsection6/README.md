@@ -6,4 +6,7 @@
 implementing Spring's own Authentication Provider. In this currently, we are only doing normal password matching.
 - Also, we have separated the prod and non-prod authentication processes based upon the spring boot's active profile. 
 prod profile has authentication enabled for the restricted APIs. But non-prod doesn't have any authentication enabled,
-only the username needs to be a valid one. 
+only the username needs to be a valid one.
+- For the prod profile, we will have proper authentication, where the username and password need to be correct. But, for
+the default profile, there is basically no authentication. Only the password should be non-null and the username needs
+to be a valid one.

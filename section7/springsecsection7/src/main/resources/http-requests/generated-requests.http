@@ -1,34 +1,34 @@
 ###
 # @no-cookie-jar
-GET http://localhost:8080/myAccount
+GET {{host-url}}myAccount
 Authorization: Basic {{john.basic-auth}}
 
 ###
 # @no-cookie-jar
-GET http://localhost:8080/myBalance
+GET {{host-url}}myBalance
 Authorization: Basic {{john.basic-auth}}
 
 ###
 # @no-cookie-jar
-GET http://localhost:8080/myCards
+GET {{host-url}}myCards
 Authorization: Basic {{john.basic-auth}}
 
 ###
 # @no-cookie-jar
-GET http://localhost:8080/contact
+GET {{host-url}}contact
 
 ###
 # @no-cookie-jar
-GET http://localhost:8080/myLoans
+GET {{host-url}}myLoans
 Authorization: Basic {{john.basic-auth}}
 
 ###
 # @no-cookie-jar
-GET http://localhost:8080/notices
+GET {{host-url}}notices
 
 ###
 # @no-cookie-jar
-POST http://localhost:8080/register
+POST {{host-url}}register
 Content-Type: application/json
 
 {
