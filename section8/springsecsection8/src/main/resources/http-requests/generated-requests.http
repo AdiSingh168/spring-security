@@ -1,0 +1,62 @@
+###
+# @no-cookie-jar
+GET {{host-url}}myAccount/id={{john.customerId}}
+Authorization: Basic {{john.basic-auth}}
+
+
+###
+# @no-cookie-jar
+GET {{host-url}}myBalance/id={{john.customerId}}
+Authorization: Basic {{john.basic-auth}}
+
+
+###
+# @no-cookie-jar
+GET {{host-url}}myCards/id={{john.customerId}}
+Authorization: Basic {{john.basic-auth}}
+
+
+###
+# @no-cookie-jar
+POST http://localhost:8080/contact
+Content-Type: application/json
+X-XSRF-TOKEN: {{csrf-token}}
+Cookie: XSRF-TOKEN={{csrf-token}}; Path=/
+
+{
+  "contactName": "Demo User",
+  "contactEmail": "demo.user@example.com",
+  "subject": "Need a demo user account",
+  "message": "I want to open a demo user account"
+}
+
+
+###
+# @no-cookie-jar
+GET {{host-url}}myLoans/id={{john.customerId}}
+Authorization: Basic {{john.basic-auth}}
+
+
+###
+# @no-cookie-jar
+GET {{host-url}}notices
+
+
+###
+# @no-cookie-jar
+POST {{host-url}}register
+Content-Type: application/json
+
+{
+  "name": "{{john.name}}",
+  "email": "{{john.username}}",
+  "mobileNumber": "{{john.mobileNumber}}",
+  "pwd": "{{john.password}}",
+  "role": "{{john.role}}"
+}
+
+
+###
+# @no-cookie-jar
+GET http://localhost:8080/user
+Authorization: Basic {{john.basic-auth}}
